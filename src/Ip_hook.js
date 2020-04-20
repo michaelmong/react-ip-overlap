@@ -15,7 +15,7 @@ const App = () => {
     const [mask3, setMask3] = useState("23");
     const [ip4, setIp4] = useState("1.2.3.4");
     const [mask4, setMask4] = useState("32");
-    const [queryResult, setQueryRest] = useState("");
+    const [queryResult, setQueryResult] = useState("");
 
 
     function ValidateFullIPaddress(ipaddress) {
@@ -212,7 +212,7 @@ const App = () => {
 
         if ((ipTyping == "") || !(ValidateFullIPaddress(ipTyping))) { queryMessage = ""; }
 
-        setQueryRest(queryMessage)
+        setQueryResult(queryMessage)
     });
 
     return (
